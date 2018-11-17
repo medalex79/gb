@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Tools" type="@Tools">
+	<collection key="tools" type="Object">
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Open in Sublime"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="C:\\Program Files\\Sublime Text 3\\sublime_text.exe"/>
+				<prop key="parameters" type="String" value="${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="true"/>
+			<prop key="waitUntilFinished" type="boolean" value="false"/>
+			<prop key="filePattern" type="String" value="*.txt,*.html,*.css"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="true"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+	</collection>
+	<prop key="fixedGitBashVbs" type="boolean" value="false"/>
+</obj>
