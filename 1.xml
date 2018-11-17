@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<obj key="Tools" type="@Tools">
+	<collection key="tools" type="Object">
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Open File"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="rundll32.exe"/>
+				<prop key="parameters" type="String" value="URL.DLL,FileProtocolHandler ${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="true"/>
+			<prop key="waitUntilFinished" type="boolean" value="false"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="true"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Open in Explorer"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="explorer.exe"/>
+				<prop key="parameters" type="String" value="/e, ${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="true"/>
+			<prop key="waitUntilFinished" type="boolean" value="false"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="false"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Open in Terminal"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="cmd.exe"/>
+				<prop key="parameters" type="String" value="/c start pushd ${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="true"/>
+			<prop key="waitUntilFinished" type="boolean" value="false"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="false"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Reveal in Explorer"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="explorer.exe"/>
+				<prop key="parameters" type="String" value="/select, ${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="true"/>
+			<prop key="waitUntilFinished" type="boolean" value="false"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="_NULL_" value=""/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Open Git-Shell"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${gitDir}\\git-bash.exe"/>
+				<prop key="parameters" type="String" value="--cd=${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="true"/>
+			<prop key="waitUntilFinished" type="boolean" value="false"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="false"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Set Executable Flag"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${git}"/>
+				<prop key="parameters" type="String" value="update-index --chmod=+x -- ${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="true"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Unset Executable Flag"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${git}"/>
+				<prop key="parameters" type="String" value="update-index --chmod=-x -- ${filePath}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="boolean" value="true"/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Show Git Version"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${git}"/>
+				<prop key="parameters" type="String" value="--version"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="_NULL_" value=""/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Format Patch"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${gitDir}\\bin\\bash.exe"/>
+				<prop key="parameters" type="String" value="&quot;${smartGitDir}\\lib\\format-patch.sh&quot; ${dirSelect} ${commit} ${commit2}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="_NULL_" value=""/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Apply Patch"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${git}"/>
+				<prop key="parameters" type="String" value="apply ${fileOpen}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="_NULL_" value=""/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Verify Database"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${git}"/>
+				<prop key="parameters" type="String" value="fsck --full --no-progress"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="_NULL_" value=""/>
+			<prop key="forRefsNotShas" type="_NULL_" value=""/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="_NULL_" value=""/>
+		</obj>
+		<obj type="@Editor">
+			<prop key="name" type="String" value="Fast-Forward Merge"/>
+			<prop key="keystroke" type="_NULL_" value=""/>
+			<obj key="fileStarter" type="@FileStarter">
+				<prop key="command" type="String" value="${gitDir}\\bin\\bash.exe"/>
+				<prop key="parameters" type="String" value="&quot;${smartGitDir}\\lib\\ff-merge.sh&quot; ${commit}"/>
+			</obj>
+			<prop key="useForOpen" type="boolean" value="false"/>
+			<prop key="waitUntilFinished" type="boolean" value="true"/>
+			<prop key="filePattern" type="String" value="*"/>
+			<prop key="forFilesNotDirectories" type="_NULL_" value=""/>
+			<prop key="forRefsNotShas" type="boolean" value="true"/>
+			<prop key="requiresConfirmation" type="boolean" value="false"/>
+			<prop key="confirmationMessage" type="String" value="Do you want to fast forward &apos;${commit}&apos; to its tracking branch?"/>
+		</obj>
+	</collection>
+	<prop key="fixedGitBashVbs" type="boolean" value="false"/>
+</obj>
