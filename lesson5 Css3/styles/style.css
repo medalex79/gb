@@ -1,0 +1,33 @@
+    body {
+        position: relative;
+        display: block;
+        padding: 0;
+        font-family: Raleway, sans-serif;
+        color: #8c8c8c;
+        background-color: #fff;
+
+    }
+
+    main,
+    footer {
+        display: block;
+        width: 1920px;
+        margin: 0 auto;
+
+    }
+
+    article,
+    aside,
+    figure,
+    figcaption,
+    hgroup,
+    section,
+    summary {
+        display: block;
+    }
+
+    header,
+    section {
+        display: block;
+        width: 100%;
+    }
