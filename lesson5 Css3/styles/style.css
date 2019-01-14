@@ -1,58 +1,68 @@
-    body {
-        position: relative;
-        display: block;
-        padding: 0;
-        font-family: Raleway, sans-serif;
-        color: #8c8c8c;
-        background-color: #fff;
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-    }
+  body {
+      position: relative;
+      display: block;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      color: #8c8c8c;
+      background-color: #fff;
 
-    main,
-    footer {
-        display: block;
-        width: 1920px;
-        margin: 0 auto;
+  }
 
-    }
+  main,
+  footer {
+      display: block;
+      width: 1920px;
+      /*margin: 0 auto;*/
 
-    header {
-        display: block;
-        height: 1024px;
-        background: url(../images/bg%20photo.png) no-repeat left;
-    }
+  }
 
-    .upperRow {
-        width: 61%;
-        margin: 0 auto;
-    }
+  header {
+      display: block;
+      height: 1024px;
+      background: url(../images/bg%20photo.png) no-repeat left;
+      color: #fff;
+  }
 
-    .logo {
-        display: block;
-        float: left;
-        font-size: 34px;
+  .upperRow {
+      width: 61%;
+      margin: 0 auto;
+  }
 
-    }
+  .logo {
+      display: block;
+      float: left;
+      font-size: 34px;
+      margin-top: 20px;
+      background: url(../images/logo.svg) no-repeat left;
+      height: 56px;
+      width: 200px;
+      padding-left: 60px;
+      padding-top: 20px
+  }
 
-    .topMenu {
-        display: block;
-        float: left;
-    }
+  .topMenu {
+      display: block;
+      float: left;
+      margin-top: 40px;
+      margin-left: 101px;
+  }
 
-    .topMenu ul li a {
-        text-decoration: none;
-        color: #fff;
-        font-size: 14px;
+  .topMenu ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
 
-    }
+  }
 
-    .topMenu ul li a:hover {
-        color: #c7b299;
-    }
+  .topMenu ul li a:hover {
+      color: #c7b299;
+  }
 
-    .topMenu ul li {
-        display: inline-grid;
-        grid-template-columns: 1fr;
-        margin-left: 20px;
+  .topMenu ul li {
+      display: inline-grid;
+      grid-template-columns: 1fr;
+      margin-right: 30px;
 
-    }
+  }
