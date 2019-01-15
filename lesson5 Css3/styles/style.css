@@ -7,14 +7,14 @@
       font-family: 'Raleway', sans-serif;
       color: #8c8c8c;
       background-color: #fff;
-
+      width: 1920px;
+      margin: 0 auto;
   }
 
   main,
   footer {
       display: block;
-      width: 1920px;
-      /*margin: 0 auto;*/
+
 
   }
 
