@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css?family=Raleway');
+  @import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
 
   body {
       position: relative;
@@ -70,6 +70,17 @@
 
   }
 
+  .search {
+      margin-left: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1vw;
+      width: 5%;
+
+  }
+
+  .search img {}
+
   .slider {
       display: flex;
       height: 740px;
@@ -85,14 +96,103 @@
       text-align: center;
   }
 
-  .slider-menu h3 {}
+  .slider-menu h3 {
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 10px;
+  }
+
+  .slider-menu h1 {
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+
+  .slider-menu p {
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      margin-bottom: 10px;
+      margin-top: 10px;
+  }
+
+  .main-menu {
+      margin: 0 auto;
+      margin-top: 3vh;
+      width: 70%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 3vw;
+  }
+
+  .main-menu-item {
+      text-align: center;
+
+  }
+
+  .main-menu-item img {
+      height: 46px;
+  }
+
+  .main-menu-item h4 {
+      font-size: 22px;
+      font-weight: 600;
+      color: #555;
+
+  }
+
+  .main-menu-item p {
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 22px;
+      color: #8c8c8c;
+
+  }
+
+  .ideas {
+      background-color: #fbfaf8;
+      height: 36vh;
+      background-image: url(../images/browser-center.png), url(../images/browser-left.png), url(../images/browser-right.png);
+      background-repeat: no-repeat;
+      background-position: center bottom, 14vw bottom, 40vw bottom;
+
+
+  }
+
+
+
+  .ideas h2 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 600;
+      color: #555;
+      padding-top: 4vh;
+  }
+
+  .ideas p {
+      display: block;
+      width: 40vw;
+      margin: 0 auto;
+      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: #8c8c8c;
+      line-height: 30px;
+      text-align: center;
+  }
+
+  .purchase-now {
+      display: block;
+      background: linear-gradient(to right, #211b19, #4e3427);
+      height: 6vh;
+
+  }
 
   .partners {
       display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       background: url(../images/parnters%20bg.png) no-repeat;
   }
 
-  .partner-item {
-      grid-row: 1;
-
-  }
+  .partner-item {}
