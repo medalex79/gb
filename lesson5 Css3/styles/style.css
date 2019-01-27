@@ -19,6 +19,10 @@ body {
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 main,
 footer {
     display: block;
@@ -112,6 +116,7 @@ header {
 }
 
 .slider-menu {
+    display: flex;
     flex-direction: column;
     width: 600px;
     align-items: center;
@@ -154,7 +159,30 @@ header {
     margin-top: 10px;
 }
 
-.button {}
+.button {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 170px;
+    height: 54px;
+    background: #998675;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #736357;
+
+
+}
+
+.button p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
 
 .main-menu {
     margin: 0 auto;
@@ -165,19 +193,77 @@ header {
     grid-gap: 3vw;
 }
 
-.main-menu-item {
-    text-align: center;
+.main-menu a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 
 }
 
-.main-menu-item img {
-    height: 46px;
+.low-border {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 33%;
+    border-bottom: 3px solid #f1eee9;
+    height: 3px;
+}
+
+.main-menu a:first-child {
+    background: url(../images/service1.svg) no-repeat top;
+}
+
+.main-menu a:nth-child(2) {
+    background: url(../images/service2.svg) no-repeat top;
+}
+
+.main-menu a:nth-child(3) {
+    background: url(../images/service3.svg) no-repeat top;
+}
+
+.main-menu a:nth-child(4) {
+    background: url(../images/service4.svg) no-repeat top;
+}
+
+.main-menu a:first-child:hover {
+    background-image: url(../images/service11.svg);
+
+}
+
+.main-menu a:nth-child(2):hover {
+    background-image: url(../images/service21.svg);
+
+}
+
+.main-menu a:nth-child(3):hover {
+    background-image: url(../images/service31.svg);
+
+}
+
+.main-menu a:nth-child(4):hover {
+    background-image: url(../images/service41.svg);
+
+}
+
+.main-menu-item {
+    text-align: center;
+
 }
 
 .main-menu-item h4 {
     font-size: 22px;
     font-weight: 600;
     color: #555;
+    margin-top: 66px;
+
+}
+
+
+
+.main-menu a h4:hover {
+    color: #c7b299;
 
 }
 
@@ -191,11 +277,10 @@ header {
 
 .ideas {
     background-color: #fbfaf8;
-    height: 36vh;
+    height: 700px;
     background-image: url(../images/browser-center.png), url(../images/browser-left.png), url(../images/browser-right.png);
     background-repeat: no-repeat;
-    background-position: center bottom, 14vw bottom, 40vw bottom;
-
+    background-position: center bottom, 30% bottom, 70% bottom;
 
 }
 
@@ -224,8 +309,57 @@ header {
 .purchase-now {
     display: block;
     background: linear-gradient(to right, #211b19, #4e3427);
-    height: 6vh;
+    height: 150px;
+}
 
+.purchase-now h6 {
+    margin-left: 20%;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 35px;
+
+}
+
+.purchase-now h6 span {
+    color: #c7b299;
+
+}
+
+.purchase-now > p {
+    display: block;
+    width: 50%;
+    color: #615855;
+    margin-top: -50px;
+    margin-left: 20%;
+    float: left;
+}
+
+purchase-now a {
+    display: block;
+    float: left;
+    width: 170px;
+}
+
+.button-purchase {
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-left: 72%;
+    width: 170px;
+    height: 54px;
+    background: #998675;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #736357;
+}
+
+.button-purchase p {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff !important;
+    margin-top: 20px;
 }
 
 .latest-projects {
@@ -233,6 +367,7 @@ header {
     width: 1171px;
 
 }
+
 
 .latest-projects h2 {
     text-align: center;
@@ -256,9 +391,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 2vw;
-    width: 50vw;
+    width: 100%;
     margin: 0 auto;
-
 
 }
 
